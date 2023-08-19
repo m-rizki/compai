@@ -80,4 +80,17 @@ we can remove the /app.page.tsx
 
 (root) and (routes) doesn't affected the url because **parenthesis** -> route group
 
-## Next: Clerk Authentication
+## Clerk Authentication
+
+create / sign in clerk account
+
+install @clerk/nextjs
+
+mount clerk provider
+
+error
+'React' refers to a UMD global, but the current file is a module. Consider adding an import instead.
+
+solved by reload window
+
+## Next : Navbar
