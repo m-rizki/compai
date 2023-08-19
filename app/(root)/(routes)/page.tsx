@@ -1,9 +1,11 @@
+import { UserButton } from '@clerk/nextjs'
 import React from 'react'
 
 const RootPage = () => {
   return (
-    // only authorized users can see this page
-    <div>RootPage (Protected)</div>
+    <div>
+      <UserButton afterSignOutUrl='/'/>
+    </div>
   )
 }
 
