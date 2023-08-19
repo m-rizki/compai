@@ -7,7 +7,7 @@
 [x] Clerk Authentication
 [x] Navbar
 [x] Sidebar
-[ ] Search Filter
+[x] Search Filter
 [ ] Category Filter
 [ ] Companion Creation Form
 [ ] Companion Creation API
@@ -113,4 +113,12 @@ shadcn button component
 
 `npx shadcn-ui@latest add sheet`
 
-## Next: Search Filter
+## Search Filter
+
+## Add query-string package
+
+`npm install query-string`
+
+## Add useDebounce Hook
+
+## Next: Category Filter
