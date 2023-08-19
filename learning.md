@@ -5,8 +5,8 @@
 [x] Environment Setup
 [x] Folder Setup
 [x] Clerk Authentication
-[ ] Navbar
-[ ] Sidebar
+[x] Navbar
+[x] Sidebar
 [ ] Search Filter
 [ ] Category Filter
 [ ] Companion Creation Form
@@ -93,7 +93,7 @@ error
 
 solved by reload window
 
-## Next : Navbar
+## Navbar
 
 ### Add Premium button component
 
@@ -101,6 +101,16 @@ shadcn button component
 
 `npx shadcn-ui@latest add button`
 
-### Next: Add Dark Mode theme
+### Add Dark Mode theme
 
 `npm install next-themes@latest`
+
+## Sidebar
+
+### Add sidebar component
+
+### Add sheet component - sidebar mobile
+
+`npx shadcn-ui@latest add sheet`
+
+## Next: Search Filter
