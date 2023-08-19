@@ -102,3 +102,5 @@ shadcn button component
 `npx shadcn-ui@latest add button`
 
 ### Next: Add Dark Mode theme
+
+`npm install next-themes@latest`
