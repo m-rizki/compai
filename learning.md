@@ -4,7 +4,7 @@
 
 [x] Environment Setup
 [x] Folder Setup
-[ ] Clerk Authentication
+[x] Clerk Authentication
 [ ] Navbar
 [ ] Sidebar
 [ ] Search Filter
@@ -94,3 +94,13 @@ error
 solved by reload window
 
 ## Next : Navbar
+
+### Add Premium button component
+
+shadcn button component
+
+`npx shadcn-ui@latest add button`
+
+### Next: Add Dark Mode theme
+
+`npm install next-themes@latest`

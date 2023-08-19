@@ -4,6 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## First Installation Setups
 
+```bash
 npx create-next-app@latest ./
 Need to install the following packages:
   create-next-app@13.4.19
@@ -14,6 +15,7 @@ Ok to proceed? (y)
 √ Would you like to use `src/` directory? ... No
 √ Would you like to use App Router? (recommended) ... Yes
 √ Would you like to customize the default import alias? ... Yes
+```
 
 ## Getting Started
 
