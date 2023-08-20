@@ -2,22 +2,22 @@
 
 ## Feature to be implemented
 
-[x] Environment Setup
-[x] Folder Setup
-[x] Clerk Authentication
-[x] Navbar
-[x] Sidebar
-[x] Search Filter
-[x] Category Filter
-[ ] Companion Creation Form
-[ ] Companion Creation API
-[ ] Companion List
-[ ] Chat Header
-[ ] Chat UI
-[ ] Memory Service
-[ ] Chat API
-[ ] Stripe API
-[ ] Stripe UI
+- [x] Environment Setup
+- [x] Folder Setup
+- [x] Clerk Authentication
+- [x] Navbar
+- [x] Sidebar
+- [x] Search Filter
+- [x] Category Filter
+- [ ] Companion Creation Form
+- [ ] Companion Creation API
+- [ ] Companion List
+- [ ] Chat Header
+- [ ] Chat UI
+- [ ] Memory Service
+- [ ] Chat API
+- [ ] Stripe API
+- [ ] Stripe UI
 
 ## Environment Setup
 
@@ -146,4 +146,12 @@ add data seed
 
 `node scripts/seed.ts`
 
-## Next: Companion Creation Form
+## Companion Creation Form
+
+<!-- every we change prisma, run this commands -->
+`npx prisma generate`
+`npx prisma db push`
+
+### Setup Form
+
+### Next: Setup Cloudinary account
