@@ -1,5 +1,5 @@
 // import { PrismaClient } from '@prisma/client'
-// cannot show autocompletion if using require
+// cannot show autocompletion if using require, but it not works if we using import
 const { PrismaClient } = require('@prisma/client')
 
 const db = new PrismaClient()

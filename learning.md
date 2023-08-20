@@ -8,7 +8,7 @@
 [x] Navbar
 [x] Sidebar
 [x] Search Filter
-[ ] Category Filter
+[x] Category Filter
 [ ] Companion Creation Form
 [ ] Companion Creation API
 [ ] Companion List
@@ -123,15 +123,15 @@ shadcn button component
 
 ## Category Filter
 
-### initialize prisma & connect to mysql database
+### initialize prisma & connect to postgresql database
 
 `npm install -D prisma`
 
 `npx prisma init`
 
-### Sign Up & setup ~~planetscale~~ neon database
+### Sign Up & setup ~~planetscale~~ supabase database
 
-nb: must use credit card for using planetscale so i switch to neon (serverless postgree database)
+nb: must use credit card for using planetscale so i switch to supabase (serverless postgresql database)
 
 `npx prisma generate`
 `npx prisma db push`
@@ -145,3 +145,5 @@ using prisma to look our database
 add data seed
 
 `node scripts/seed.ts`
+
+## Next: Companion Creation Form
