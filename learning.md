@@ -121,4 +121,27 @@ shadcn button component
 
 ## Add useDebounce Hook
 
-## Next: Category Filter
+## Category Filter
+
+### initialize prisma & connect to mysql database
+
+`npm install -D prisma`
+
+`npx prisma init`
+
+### Sign Up & setup ~~planetscale~~ neon database
+
+nb: must use credit card for using planetscale so i switch to neon (serverless postgree database)
+
+`npx prisma generate`
+`npx prisma db push`
+
+### Setup Database Library
+
+using prisma to look our database
+
+`npx prisma studio`
+
+add data seed
+
+`node scripts/seed.ts`
