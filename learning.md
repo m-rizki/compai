@@ -172,3 +172,7 @@ after login i immediately click back to go to dashboard, i don't know the dashbo
 - add create and edit functionality
 
 ## Next: Companion List
+
+### Add Component if companions is not available
+
+## Next : Add Component if companions is available
