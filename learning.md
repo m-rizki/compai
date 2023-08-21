@@ -154,4 +154,15 @@ add data seed
 
 ### Setup Form
 
-### Next: Setup Cloudinary account
+### Setup Cloudinary account
+
+after login i immediately click back to go to dashboard, i don't know the dashboard issue but its error in my account, maybe its connection error
+
+- go to dashboard -> copy cloud name
+- add on .env
+- install cloudinary package : `npm install next-cloudinary`
+- go to cloudinary dashboard -> settings -> upload
+- add upload preset -> set signing mode to 'unsigned'
+- copy the name of upload preset -> paste to uploadPreset attribute in image-upload.tsx
+
+## Next: Companion Creation API
