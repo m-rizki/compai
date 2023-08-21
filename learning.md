@@ -11,8 +11,8 @@
 - [x] Category Filter
 - [x] Companion Creation Form
 - [x] Companion Creation API
-- [ ] Companion List
-- [ ] Chat Header
+- [x] Companion List
+- [x] Chat Header
 - [ ] Chat UI
 - [ ] Memory Service
 - [ ] Chat API
@@ -171,10 +171,20 @@ after login i immediately click back to go to dashboard, i don't know the dashbo
 
 - add create and edit functionality
 
-## Next: Companion List
+## Companion List
 
 ### Add Component if companions is not available
 
 ### Add Component if companions is available
 
-## Next: Chat Header
+## Chat Header
+
+### Add: Back Button
+
+### Add avatar and some icon
+
+### Add edit and delete functionality
+
+router.refresh() is used for refresh All the server components to newest data
+
+## Next: Chat UI
