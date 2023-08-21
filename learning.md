@@ -2,22 +2,22 @@
 
 ## Feature to be implemented
 
-[x] Environment Setup
-[x] Folder Setup
-[x] Clerk Authentication
-[x] Navbar
-[x] Sidebar
-[x] Search Filter
-[x] Category Filter
-[ ] Companion Creation Form
-[ ] Companion Creation API
-[ ] Companion List
-[ ] Chat Header
-[ ] Chat UI
-[ ] Memory Service
-[ ] Chat API
-[ ] Stripe API
-[ ] Stripe UI
+- [x] Environment Setup
+- [x] Folder Setup
+- [x] Clerk Authentication
+- [x] Navbar
+- [x] Sidebar
+- [x] Search Filter
+- [x] Category Filter
+- [ ] Companion Creation Form
+- [ ] Companion Creation API
+- [ ] Companion List
+- [ ] Chat Header
+- [ ] Chat UI
+- [ ] Memory Service
+- [ ] Chat API
+- [ ] Stripe API
+- [ ] Stripe UI
 
 ## Environment Setup
 
@@ -146,4 +146,23 @@ add data seed
 
 `node scripts/seed.ts`
 
-## Next: Companion Creation Form
+## Companion Creation Form
+
+<!-- every we change prisma, run this commands -->
+`npx prisma generate`
+`npx prisma db push`
+
+### Setup Form
+
+### Setup Cloudinary account
+
+after login i immediately click back to go to dashboard, i don't know the dashboard issue but its error in my account, maybe its connection error
+
+- go to dashboard -> copy cloud name
+- add on .env
+- install cloudinary package : `npm install next-cloudinary`
+- go to cloudinary dashboard -> settings -> upload
+- add upload preset -> set signing mode to 'unsigned'
+- copy the name of upload preset -> paste to uploadPreset attribute in image-upload.tsx
+
+## Next: Companion Creation API
