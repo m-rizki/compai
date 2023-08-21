@@ -9,8 +9,8 @@
 - [x] Sidebar
 - [x] Search Filter
 - [x] Category Filter
-- [ ] Companion Creation Form
-- [ ] Companion Creation API
+- [x] Companion Creation Form
+- [x] Companion Creation API
 - [ ] Companion List
 - [ ] Chat Header
 - [ ] Chat UI
@@ -165,4 +165,10 @@ after login i immediately click back to go to dashboard, i don't know the dashbo
 - add upload preset -> set signing mode to 'unsigned'
 - copy the name of upload preset -> paste to uploadPreset attribute in image-upload.tsx
 
-## Next: Companion Creation API
+## Companion Creation API
+
+`npm install axios`
+
+- add create and edit functionality
+
+## Next: Companion List
