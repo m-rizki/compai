@@ -194,3 +194,45 @@ install ai package from vercel : `npm install ai`
 ### Add Chat Input UI
 
 ### Chat Messages Components
+
+## Next : Memory Service
+
+### install additional packages
+
+`npm i @pinecone-database/pinecone`
+`npm i @upstash/redis`
+`npm i @upstash/ratelimit`
+`npm i langchain`
+
+### connect to service
+
+pinecone vector database:
+
+1. go to [pinecone vector database](https://www.pinecone.io/)
+2. Create Account and go to [pinecone console](https://app.pinecone.io/)
+3. create index
+4. Give it a name : (indexname) -> for .env PINECONE_INDEX="(indexname)"
+5. Configure your Index - dimensions : 1536
+6. create index
+7. go to 'connect' or go to API key on sidebar
+
+upstash redis:
+
+1. go to [upstash redis](https://upstash.com) and sign in / sign up
+2. go to console
+3. create database
+4. fill the name
+5. type global
+6. primary region
+7. read region
+8. check tsl(ssl) enabled and Eviction
+9. Find REST API section
+10. select .env
+
+OpenAI API
+
+1. go to openai platform website
+2. sign in / sign up
+3. click profile picture -> view api keys
+4. create new secret key -> (name)
+5. you can see your limit in usage on free tier $0/$50
