@@ -195,7 +195,7 @@ install ai package from vercel : `npm install ai`
 
 ### Chat Messages Components
 
-## Next : Memory Service
+## Memory Service
 
 ### install additional packages
 
@@ -236,3 +236,5 @@ OpenAI API
 3. click profile picture -> view api keys
 4. create new secret key -> (name)
 5. you can see your limit in usage on free tier $0/$50
+
+### Add memory service - memory.ts
