@@ -187,4 +187,10 @@ after login i immediately click back to go to dashboard, i don't know the dashbo
 
 router.refresh() is used for refresh All the server components to newest data
 
-## Next: Chat UI
+## Chat UI
+
+install ai package from vercel : `npm install ai`
+
+### Add Chat Input UI
+
+### Chat Messages Components
