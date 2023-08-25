@@ -13,8 +13,8 @@
 - [x] Companion Creation API
 - [x] Companion List
 - [x] Chat Header
-- [ ] Chat UI
-- [ ] Memory Service
+- [x] Chat UI
+- [x] Memory Service
 - [ ] Chat API
 - [ ] Stripe API
 - [ ] Stripe UI
@@ -238,3 +238,21 @@ OpenAI API
 5. you can see your limit in usage on free tier $0/$50
 
 ### Add memory service - memory.ts
+
+## Chat API
+
+install some packages
+
+`npm install replicate`
+`npm install openai`
+`npm install openai-edge`
+`npm install dotenv`
+
+### Rate Limit Implementation
+
+setup replicate api key:
+
+- go to replicate.com
+- create account
+- click profile - go to api token
+- create token - copy token
