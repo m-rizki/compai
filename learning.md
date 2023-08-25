@@ -15,7 +15,7 @@
 - [x] Chat Header
 - [x] Chat UI
 - [x] Memory Service
-- [ ] Chat API
+- [x] Chat API
 - [ ] Stripe API
 - [ ] Stripe UI
 

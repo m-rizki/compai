@@ -6,6 +6,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 github repo : [next13-ai-companion](https://github.com/AntonioErdeljac/next13-ai-companion)
 
+## notes
+
+I haven't implemented the subscription feature yet, but i want to create the alternative way or alternative payment method to prevent non subscription users from accessing create companion functionality
+
 ## First Installation Setups
 
 ```bash
