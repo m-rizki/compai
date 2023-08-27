@@ -41,7 +41,7 @@ const ChatHeader = ({ companion }: ChatHeaderProps) => {
     try {
       await axios.delete(`/api/companion/${companion.id}`)
       toast({
-        description: 'Sucess.',
+        description: 'Success.',
       })
       router.refresh()
       router.push('/')
