@@ -2,41 +2,41 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
   previewFeatures = ["fullTextSearch"]
 }
 
 datasource db {
-  provider          = "postgresql"
-  url               = env("DATABASE_URL")
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
 
 model Category {
-  id              String @id @default(uuid())
-  name            String
-  companions      Companion[]
+  id         String      @id @default(uuid())
+  name       String
+  companions Companion[]
 }
 
 model Companion {
-  id              String @id @default(uuid())
-  userId          String
-  userName        String
-  src             String
-  name            String @db.Text // @db.Text also make it searchable
-  description     String
-  instructions    String @db.Text
-  seed            String @db.Text
+  id           String @id @default(uuid())
+  userId       String
+  userName     String
+  src          String
+  name         String @db.Text // @db.Text also make it searchable
+  description  String
+  instructions String @db.Text
+  seed         String @db.Text
 
-  createdAt       DateTime @default(now())  
-  updatedAt       DateTime @updatedAt()
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt()
 
-  category        Category @relation(fields: [categoryId], references: [id])
-  categoryId      String
+  category   Category @relation(fields: [categoryId], references: [id])
+  categoryId String
 
-  messages        Message[]
+  messages Message[]
+  // @@fulltext([name]) // its not suppored on postgresql
 
   @@index([categoryId])
-  // @@fulltext([name]) // its not suppored on postgresql
 }
 
 enum Role {
@@ -45,16 +45,23 @@ enum Role {
 }
 
 model Message {
-  id              String @id @default(uuid())
-  role            Role
-  content         String @db.Text
-  createdAt       DateTime @default(now())  
-  updatedAt       DateTime @updatedAt()
+  id        String   @id @default(uuid())
+  role      Role
+  content   String   @db.Text
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt()
 
-  companionId     String
-  userId          String
+  companionId String
+  userId      String
 
   companion Companion @relation(fields: [companionId], references: [id], onDelete: Cascade)
 
   @@index([companionId])
+}
+
+model UserSubscription {
+  id               String  @id @default(uuid())
+  userId           String  @unique
+  subscriptionId   String? @unique @map(name: "subscription_id")
+  currentPeriodEnd DateTime? @unique @map(name: "current_period_end")
 }

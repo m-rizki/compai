@@ -16,8 +16,10 @@
 - [x] Chat UI
 - [x] Memory Service
 - [x] Chat API
-- [ ] Stripe API
-- [ ] Stripe UI
+- [x] Subscription API & Subscription UI
+- [ ] Deployment
+<!-- - [ ] Stripe API -->
+<!-- - [ ] Stripe UI -->
 
 ## Environment Setup
 
@@ -256,3 +258,8 @@ setup replicate api key:
 - create account
 - click profile - go to api token
 - create token - copy token
+
+## Subscription API & Subscription UI
+
+`npm install zustand`
+`npx shadcn-ui@latest add dialog`
