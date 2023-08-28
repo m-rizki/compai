@@ -24,6 +24,7 @@
 ## Environment Setup
 
 ```bash
+# First setup
 npx create-next-app@latest ./
 Need to install the following packages:
   create-next-app@13.4.19
@@ -35,7 +36,7 @@ Ok to proceed? (y)
 √ Would you like to use App Router? (recommended) ... Yes
 √ Would you like to customize the default import alias? ... Yes
 
-Setup shadcn ui
+# Setup shadcn ui
 
 $ npx shadcn-ui@latest init
 Need to install the following packages:
