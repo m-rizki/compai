@@ -17,7 +17,7 @@
 - [x] Memory Service
 - [x] Chat API
 - [x] Subscription API & Subscription UI
-- [ ] Deployment
+- [x] Deployment
 <!-- - [ ] Stripe API -->
 <!-- - [ ] Stripe UI -->
 
@@ -263,3 +263,19 @@ setup replicate api key:
 
 `npm install zustand`
 `npx shadcn-ui@latest add dialog`
+
+## Deployment notes
+
+migrate reset, reset entire database
+
+`npx prisma migrate reset`
+
+`npx prisma generate`
+
+`npx prisma db push`
+
+if you decide to reset the entire database, you have to seeds categories
+
+make sure you run commands
+
+`node scripts/seed.ts`
