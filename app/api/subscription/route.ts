@@ -30,7 +30,7 @@ export async function GET() {
 
     if (userSubscription) {
       return new NextResponse(
-        JSON.stringify({ message: 'you have subscribed', url: settingsUrl })
+        JSON.stringify({ message: 'Your Subscription Request was Successful!', url: settingsUrl })
       )
     }
 

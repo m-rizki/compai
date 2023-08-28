@@ -31,6 +31,7 @@ const ProModal = () => {
         variant: 'default',
         description: response.data.message,
       })
+      proModal.onClose()
       router.refresh()
       router.push(response.data.url)
     } catch (error) {
