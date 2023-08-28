@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
 import {
@@ -22,6 +22,16 @@ const ProModal = () => {
   const router = useRouter()
 
   const [loading, setLoading] = useState(false)
+  // modal are common case for hydration errors
+  // we can't see in this project because in our layout, we add supressHydrationWarning
+  // isMounted is going to be false on server side
+  const [isMounted, setIsMounted] = useState(false)
+
+  // this will prevent from pro modal to cause any hydration errors
+  // and then we get the useEffect that means we are already on the client side
+  useEffect(() => {
+    setIsMounted(true)
+  }, [])
 
   const onSubscribe = async () => {
     try {
@@ -42,6 +52,10 @@ const ProModal = () => {
     } finally {
       setLoading(false)
     }
+  }
+
+  if(!isMounted) {
+    return null
   }
 
   return (
@@ -66,7 +80,8 @@ const ProModal = () => {
         <Separator />
         <p className='text-center space-y-2'>
           After successfully subscribing, please contact me on Discord
-          <span className='text-sky-500 font-medium'> rizki2707</span> to get a Pro Tier!
+          <span className='text-sky-500 font-medium'> rizki2707</span> to get a
+          Pro Tier!
         </p>
       </DialogContent>
     </Dialog>
